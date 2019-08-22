@@ -1,0 +1,26 @@
+@font-face {
+	font-family: "MuliRegular";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Muli-Regular.eot?#iefix") format("embedded-opentype"), 
+	url("../fonts/Muli-Regular.woff") format("woff"), 
+	url("../fonts/Muli-Regular.ttf") format("truetype"); 
+}
+
+@font-face {
+	font-family: "MuliSemiBold";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Muli-SemiBold.eot?#iefix") format("embedded-opentype"), 
+	url("../fonts/Muli-SemiBold.woff") format("woff"), 
+	url("../fonts/Muli-SemiBold.ttf") format("truetype"); 
+}
+
+@font-face {
+	font-family: "MuliItalic";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Muli-Italic.eot?#iefix") format("embedded-opentype"), 
+	url("../fonts/Muli-Italic.woff") format("woff"), 
+	url("../fonts/Muli-Italic.ttf") format("truetype"); 
+}
