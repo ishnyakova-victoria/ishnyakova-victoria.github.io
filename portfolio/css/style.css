@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+html {
+    min-height: 100%;
+    font-size: 16px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #475461;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.5;
+    background: linear-gradient(to bottom, #D8E0E7, #ffffff);
+}
+
+h1,
+h2 {
+    margin: 0;
+    color: #1c2732;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: #475461;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: underline;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 50px auto;
+    padding: 75px 50px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(93,109,126,0.5);
+    box-sizing: border-box;
+    display: flex;
+}
+
+.main-information {
+    width: 30%;
+    margin-right: 100px;
+    text-align: right;
+}
+
+.photo img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(93,109,126,0.5);
+}
+
+.name {
+    margin: 25px 0;
+}
+
+.contact i {
+    margin-left: 10px;
+}
+
+.information {
+    width: 70%;
+}
+
+.information-item {
+    border-left: 3px dotted #475461;
+    padding-left: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.information-item:last-child {
+    margin-bottom: 0;
+}
+
+.information h2 {
+    border-bottom: 1px solid #475461;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: #475461;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    left: -30px;
+    box-shadow: 0 0 10px rgb(93,109,126,0.5);
+}
+
+.icon i {
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.university {
+    margin-bottom: 25px;
+}
+
+.university > p {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.university-desc {
+    display: flex;
+}
+
+.university-desc p:first-child {
+    width: 20%;
+}
+
+.university-desc p:last-child {
+    width: 80%;
+}
+
+.job {
+    margin-bottom: 25px;
+}
+
+.job > p {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.job-desc {
+    display: flex;
+}
+
+.job-desc p:first-child {
+    width: 20%;
+}
+
+.job-desc p:last-child {
+    width: 80%;
+}
+
+.job-desc time {
+    white-space: nowrap;
+}
+
+.skills ul li {
+    list-style: disc inside;
+}
+
+.projects .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projects .project {
+    width: 48%;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgb(93,109,126,0.5);
+    cursor: pointer;
+    position: relative;
+}
+
+.projects .project .front-side,
+.projects .project .back-side {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.projects .project .back-side {
+    opacity: 0;
+    background-color: #fff;
+    transition: opacity 0.7s;
+}
+
+.projects .project:hover .back-side {
+    opacity: 80%;
+}
+
+.projects .front-side img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.projects .back-side a {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .main-information {
+        width: 100%;
+        margin: 0 0 50px 0;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .main-information-desc {
+        margin-left: 50px;
+    }
+
+    .information {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .main-information {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main-information-desc {
+        margin: 0;
+    }
+
+    .projects .project {
+        width: 100%;
+    }    
+}
+
+@media screen and (max-width: 576px) {
+    .university-desc,
+    .job-desc {
+        flex-wrap: wrap;
+    }
+
+    .university-desc p:first-child,
+    .university-desc p:last-child,
+    .job-desc p:first-child,
+    .job-desc p:last-child {
+        width: 100%;
+    }
+}
